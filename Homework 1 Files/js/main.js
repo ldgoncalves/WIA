@@ -37,6 +37,7 @@ Reminder - set the style first then draw.
 window.onload = function(){
     part1();
     part2();
+    part3();
 };
 
 function part1(){
@@ -114,7 +115,32 @@ Height and width and color are up to you.
 
 ********************************************/
 
-
+function part3(){
+    if(Modernizr.canvas){
+        //Canvas is supported
+        var theCanvasStar = document.getElementById("Canvas3");
+        if(theCanvasStar && theCanvasStar.getContext){
+            //Get Context
+            var ctxS = theCanvasStar.getContext("2d");
+            if(ctxS) {
+                //Draw Circle here
+                ctxS.strokeStyle = "black";
+                ctxS.fillStyle = "rgba(255,0,0,.5)";
+                ctxS.lineWidth = 5;
+                ctxS.beginPath();
+                ctxS.arc(50,50,20,0,2*Math.PI, false);
+                ctxS.fill();
+                ctxS.beginPath();
+                ctxS.arc(50,50,30,0,2*Math.PI, false);
+                ctxS.stroke();
+            }
+        }
+    }else{
+        //Canvas is not supported
+        //Polyfill would go here
+        console.log("Not Supported");
+    }
+}
 //Draw Star here
 
 
