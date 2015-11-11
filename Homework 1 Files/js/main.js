@@ -123,16 +123,41 @@ function part3(){
             //Get Context
             var ctxS = theCanvasStar.getContext("2d");
             if(ctxS) {
-                //Draw Circle here
-                ctxS.strokeStyle = "black";
-                ctxS.fillStyle = "rgba(255,0,0,.5)";
+                //Draw star here
+                ctxS.strokeStyle = "black"
+                ctxS.fillStyle = "yellow";
                 ctxS.lineWidth = 5;
                 ctxS.beginPath();
-                ctxS.arc(50,50,20,0,2*Math.PI, false);
-                ctxS.fill();
-                ctxS.beginPath();
-                ctxS.arc(50,50,30,0,2*Math.PI, false);
+
+                ctxS.moveTo(100,100);
+                ctxS.lineTo(140,115);
+                ctxS.lineTo(100,140);
+                ctxS.lineTo(111, 180);
+                ctxS.lineTo(80, 160);
+                ctxS.lineTo(50,180);
+                ctxS.lineTo(40, 140);
+                ctxS.lineTo(5, 130);
+                ctxS.lineTo(50, 110);
+                ctxS.lineTo(70, 75);
+                ctxS.closePath();
+
+
+                //ctxS.moveTo(112,40);
+                //ctxS.lineTo(130.34,65.73);
+                //ctxS.lineTo(161.45, 74.55);
+                //ctxS.lineTo(141.67, 99.27);
+                //ctxS.lineTo(142.56, 130.45);
+                ////ctxS.lineTo(112, 120);
+                //ctxS.lineTo(81.44, 130.45);
+                //ctxS.lineTo(82.33, 99.27);
+                //ctxS.lineTo(62.55, 74.55);
+                //ctxS.lineTo(93.66, 65.73);
+                ////ctxS.closePath();
+
+
                 ctxS.stroke();
+
+                ctxS.fill();
             }
         }
     }else{

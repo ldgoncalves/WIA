@@ -1,0 +1,1 @@
+console.log("The canvas is supported, nothing else needs to be done.");
