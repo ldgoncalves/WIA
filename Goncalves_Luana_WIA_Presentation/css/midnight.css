@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Caviar Dreams Bold';
+    src: url('../fonts/caviardreams_bold_macroman');
+    src: url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.eot') format('eot'),
+    url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+    url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+    url('../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/caviardreams_regular_macroman');
+    src: url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.eot') format('eot'),
+    url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.woff') format('woff'),
+    url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.ttf') format('truetype'),
+    url('../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.svg') format('svg');
+}
+
+nav.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 300px;
+    text-align: center;
+    z-index: 9999;
+}
+
+a.logo {
+    font: 4em 'Caviar Dreams';
+    display: inline-block;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    height: 65px;
+    background-color: cornsilk;
+}
+
+footer {
+    text-align: center;
+    background-color: cornsilk;
+    height: 30px;
+    padding: 10px;
+}
+
+.first-background {
+    background: url('../images/0029.jpg') no-repeat center center;
+    background-size: cover;
+    height: 750px;
+}
+
+.second-background {
+    background: url('../images/0066 2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 750px;
+}
+
+.third-background {
+    background: url('../images/IMG_0603.jpg') no-repeat center center;
+    background-size: cover;
+    height: 750px;
+}
+
+.fourth-background {
+    background: url('../images/IMG_0640.jpg') no-repeat center center;
+    background-size: cover;
+    height: 750px;
+}
+
+.midnightHeader.grey .logo {
+    color: lightgray;
+}
+
+.midnightHeader.blue .logo {
+    color: blue;
+    font-family: 'Caviar Dreams Bold';
+}
+
+.midnightHeader.white .logo {
+    color: white;
+    font-family: 'Caviar Dreams Bold';
+}
+
+.midnightHeader.red .logo {
+    color: red;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 650px) {
+    a.logo {
+        font-size: 3em;
+    }
+
+    .first-background, .second-background, .third-background, .fourth-background {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 50px) and (max-width: 501px) {
+    a.logo {
+        font-size: 2em;
+    }
+
+    .first-background, .second-background, .third-background, .fourth-background {
+        height: 300px;
+    }
+}
+

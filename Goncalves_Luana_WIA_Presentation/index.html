@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Midnight.JS Presentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/midnight.css">
+
+
+</head>
+<body>
+
+<!-- Fixed Nav -->
+<nav class="fixed">
+    <div class="midnightHeader default">
+        <a class="logo">Luana Photography</a>
+    </div>
+</nav>
+
+<!--Sections-->
+<header>
+</header>
+<section class="first-background" data-midnight="grey">
+</section>
+<section class="second-background" data-midnight="blue">
+    <h1></h1>
+</section>
+<section class="third-background" data-midnight="red">
+    <h1></h1>
+</section>
+<section class="fourth-background" data-midnight="white">
+    <h1></h1>
+</section>
+
+
+<footer>
+    <p>All images are by Luana Goncalves.</p>
+</footer>
+
+<script type="text/javascript" src="includes/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="includes/midnight.jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('nav.fixed').midnight();
+    });
+</script>
+
+</body>
+</html>

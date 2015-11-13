@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The Midnight.JS Presentation</title>
+
+    <meta name="description" content="A plugin for changing headers on the fly">
+    <meta name="author" content="Luana Goncalves">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/styles/solarized_dark.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <!--Slide 1-->
+        <section>
+            <h2>jQuery Plugin Presentation</h2>
+
+            <h1> Midnight.JS</h1>
+            <h6> By Luana Goncalves</h6>
+            <h6> Web Interaction & Animation - Section 01</h6>
+            <h6> November 12, 2015</h6>
+        </section>
+        <!--Slide 2-->
+        <section>
+            <h2> What is Midnight.JS</h2>
+            <img src="images/Midnightjs.png" style="width:300px; height:auto;">
+
+            <p>Midnight.JS is a jQuery plugin that allows you to change the color of your fixed logo or navigation
+                according to the background color of the page as you scroll down.</p>
+            <a href="http://aerolab.github.io/midnight.js/" target="blank">Midnight Demo Page</a>
+        </section>
+        <!--Slide 3 Nested-->
+        <section>
+            <section>
+                <h2> Getting Started</h2>
+
+                <p> So you’re going to have to download the jQuery library and the midnight Plugin in order for it to
+                    work! Link them into your HTML and your ready to start coding!</p>
+            </section>
+            <section>
+                <h2>Download</h2>
+                <a href="https://jquery.com/" target="_blank">jQuery Library</a>
+            </section>
+            <section>
+                <h2>Download</h2>
+                <a href="http://aerolab.github.io/midnight.js/" target="_blank">Midnight.JS</a>
+            </section>
+            <section>
+                <h2>Download</h2>
+                <a href="https://github.com/Aerolab/midnight.js" target="_blank">Midnight Read Me File</a>
+            </section>
+        </section>
+        <!--Slide 4 Nested-->
+        <section>
+            <section>
+                <h2>Let's get coding!</h2>
+            <pre>
+                <code>
+                    &#x3C;!DOCTYPE html&#x3E;
+                    &#x3C;html&#x3E;
+                    &#x3C;head lang=&#x22;en&#x22;&#x3E;
+                    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+                    &#x3C;title&#x3E;Midnight.JS Presentation&#x3C;/title&#x3E;
+                    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1, maximum-scale=1,
+                    user-scalable=no, minimal-ui&#x22;/&#x3E;
+                    &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;css/reset.css&#x22;&#x3E;
+                    &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;css/midnight.css&#x22;&#x3E;
+                    &#x3C;/head&#x3E;
+                    &#x3C;body&#x3E;
+                    &#x3C;!-- Fixed Nav --&#x3E;
+                    &#x3C;nav class=&#x22;fixed&#x22;&#x3E;
+                    &#x3C;div class=&#x22;midnightHeader default&#x22;&#x3E;
+                    &#x3C;a class=&#x22;logo&#x22;&#x3E;Luana Photography&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;/nav&#x3E;
+                    &#x3C;!--Sections--&#x3E;
+                    &#x3C;header&#x3E;
+                    &#x3C;/header&#x3E;
+                    &#x3C;section class=&#x22;first-background&#x22; data-midnight=&#x22;grey&#x22;&#x3E;
+                    &#x3C;/section&#x3E;
+                    &#x3C;section class=&#x22;second-background&#x22; data-midnight=&#x22;blue&#x22;&#x3E;
+                    &#x3C;h1&#x3E;&#x3C;/h1&#x3E;
+                    &#x3C;/section&#x3E;
+                    &#x3C;section class=&#x22;third-background&#x22; data-midnight=&#x22;red&#x22;&#x3E;
+                    &#x3C;h1&#x3E;&#x3C;/h1&#x3E;
+                    &#x3C;/section&#x3E;
+                    &#x3C;section class=&#x22;fourth-background&#x22; data-midnight=&#x22;white&#x22;&#x3E;
+                    &#x3C;h1&#x3E;&#x3C;/h1&#x3E;
+                    &#x3C;/section&#x3E;
+                    &#x3C;footer&#x3E;
+                    &#x3C;p&#x3E;All images are by Luana Goncalves.&#x3C;/p&#x3E;
+                    &#x3C;/footer&#x3E;
+                    &#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;includes/jquery-1.11.3.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+                    &#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;includes/midnight.jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+                    &#x3C;script&#x3E;
+                    $(document).ready(function(){
+                    $(&#x27;nav.fixed&#x27;).midnight();
+                    });
+                    &#x3C;/script&#x3E;
+                    &#x3C;/body&#x3E;
+                    &#x3C;/html&#x3E;
+                </code>
+            </pre>
+            </section>
+
+            <section>
+                <h2>Download</h2>
+                <a href="https://necolas.github.io/normalize.css/" target="blank">Normalize.CSS</a>
+            </section>
+        </section>
+        <!--Slide 5-->
+        <section>
+            <h2>CSS</h2>
+            <pre>
+                <code>
+                    @font-face {
+                    font-family: &#x27;Caviar Dreams Bold&#x27;;
+                    src: url(&#x27;../fonts/caviardreams_bold_macroman&#x27;);
+                    src: url(&#x27;../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.eot&#x27;) format(&#x27;eot&#x27;),
+                    url(&#x27;../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.woff&#x27;) format(&#x27;woff&#x27;),
+                    url(&#x27;../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.ttf&#x27;) format(&#x27;truetype&#x27;),
+                    url(&#x27;../fonts/caviardreams_bold_macroman/Caviar_Dreams_Bold-webfont.svg&#x27;) format(&#x27;svg&#x27;);
+                    }
+                    @font-face {
+                    font-family: &#x27;Caviar Dreams&#x27;;
+                    src: url(&#x27;../fonts/caviardreams_regular_macroman&#x27;);
+                    src: url(&#x27;../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.eot&#x27;) format(&#x27;eot&#x27;),
+                    url(&#x27;../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.woff&#x27;) format(&#x27;woff&#x27;),
+                    url(&#x27;../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.ttf&#x27;) format(&#x27;truetype&#x27;),
+                    url(&#x27;../fonts/caviardreams_regular_macroman/CaviarDreams-webfont.svg&#x27;) format(&#x27;svg&#x27;);
+                    }
+                    nav.fixed {
+                    position: fixed;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    overflow: hidden;
+                    height: 300px;
+                    text-align: center;
+                    z-index: 9999;
+                    }
+                    a.logo {
+                    font: 4em &#x27;Caviar Dreams&#x27;;
+                    display: inline-block;
+                    padding: 20px;
+                    margin: 0 auto;
+                    }
+                    header {
+                    height: 65px;
+                    background-color: cornsilk;
+                    }
+                    footer {
+                    text-align: center;
+                    background-color: cornsilk;
+                    height: 30px;
+                    padding: 10px;
+                    }
+                    .first-background {
+                    background: url(&#x27;../images/0029.jpg&#x27;) no-repeat center center;
+                    background-size: cover;
+                    height: 750px;
+                    }
+                    .second-background {
+                    background: url(&#x27;../images/0066 2.jpg&#x27;) no-repeat center center;
+                    background-size: cover;
+                    height: 750px;
+                    }
+                    .third-background {
+                    background: url(&#x27;../images/IMG_0603.jpg&#x27;) no-repeat center center;
+                    background-size: cover;
+                    height: 750px;
+                    }
+                    .fourth-background {
+                    background: url(&#x27;../images/IMG_0640.jpg&#x27;) no-repeat center center;
+                    background-size: cover;
+                    height: 750px;
+                    }
+                    .midnightHeader.grey .logo {
+                    color: lightgray;
+                    }
+                    .midnightHeader.blue .logo {
+                    color: blue;
+                    font-family: &#x27;Caviar Dreams Bold&#x27;;
+                    }
+                    .midnightHeader.white .logo {
+                    color: white;
+                    font-family: &#x27;Caviar Dreams Bold&#x27;;
+                    }
+                    .midnightHeader.red .logo {
+                    color: red;
+                    }
+                    @media only screen and (min-width: 501px) and (max-width: 650px) {
+                    a.logo {
+                    font-size: 3em;
+                    }
+                    .first-background, .second-background, .third-background, .fourth-background {
+                    height: 500px;
+                    }
+                    }
+                    @media only screen and (min-width: 50px) and (max-width: 501px) {
+                    a.logo {
+                    font-size: 2em;
+                    }
+                    .first-background, .second-background, .third-background, .fourth-background {
+                    height: 300px;
+                    }
+                    }
+                </code>
+            </pre>
+        </section>
+        <!--Slide 6-->
+        <section>
+            <h2>Complete!</h2>
+            <a href="index.html" target="_blank">View Demo</a>
+        </section>
+    </div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme || 'solarized', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {
+                src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            }
+            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+</script>
+</body>
+</html>
