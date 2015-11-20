@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,700italic);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+    margin:0;
+    padding: 0;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Test */
+
+h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+h3 {
+    margin: 0 0 .5em 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #007Eff;
+}
+
+a:visited {
+    color: #65b1ff;
+}
+
+a.btn {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 4px 15px;
+    background-color: rgba(0,0,0,.60);
+    transition: background-color .5s;
+
+}
+
+a.btn:hover {
+    background-color: rgba(0,0,0,.9);
+}
+
+/* Header */
+
+header {
+    height: 430px;
+    background: #062940 url(../images/1200.jpg) no-repeat center bottom;
+    position: relative;
+}
+
+header a.logo {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 75px;
+    background: url(../images/logo.svg) no-repeat 0 0;
+    background-size: contain;
+    top: 15px;
+    left: 20px;
+    z-index: 1;
+}
+
+header a.logo span {
+    display: none;
+}
+
+header div.hero {
+    position: absolute;
+    width: 42%;
+    top: 130px;
+    left: 55%;
+}
+
+header div.hero h1 {
+    line-height: 1em;
+    margin: 0 0 30px 0;
+    color: cornsilk;
+}
+
+/* Section - All */
+
+section {
+    padding: 0 30px;
+}
+
+section::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+/*Section - CTA */
+
+section.cta {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+section.cta aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.cta .content {
+    margin: 15px;
+    background: no-repeat center top;
+    background-size: 75px 75px;
+    padding-top: 85px;
+
+}
+
+section.cta aside h3 a {
+    color: #000;
+    text-decoration: none;
+}
+
+section.cta aside h3 a:hover {
+    text-decoration: underline;
+}
+
+section.cta aside .content.locate {
+    background-image: url(../images/pinoint.svg);
+}
+
+section.cta aside .content.scholarships {
+    background-image: url(../images/book.svg);
+}
+
+section.cta aside .content.resources {
+    background-image: url(../images/gear.svg);
+}
+
+/* Section - Feature */
+
+section.feature {
+    background-color: #2e3192;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+section.feature article {
+    padding: 0 20px 0 530px;
+    background: url(../images/girl_AP080326036425.jpg) no-repeat 0 5px;
+    min-height: 250px;
+}
+
+/* Section - Gallery */
+
+section.image-gallery {
+    background-color: cornsilk;
+    position: relative;
+    margin-top: 20px;
+    min-height: 300px;
+}
+
+section.image-gallery aside .content {
+    padding: 30px 30px 20px 0;
+}
+
+section.image-gallery aside .content h2 {
+    margin-bottom: 0;
+}
+
+section.image-gallery aside .content p {
+    margin-bottom: .5em;
+}
+
+section.image-gallery aside a {
+    text-decoration: none;
+}
+
+/* nav */
+
+nav {
+    background-color: rgba(0,0,0,.65);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+nav::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+nav ul li:hover {
+    background-color: #007Eff;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+}
+
+nav ul li a:visited {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #2e3192;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color:#007Eff;
+    display: none;
+}
+
+nav ul ul li {
+    position: relative;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0px;
+
+}
+
+/* top-level */
+
+nav > ul {
+    padding-left: 200px;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li > a {
+    width: auto;
+    padding: 10px 20px 15px 20px;
+}
+
+/*audio*/
+
+audio {
+    margin-top: 20px;
+
+}
+
+
+/* footer */
+
+footer {
+    font-size: .8em;
+    margin: 40px;
+    color: #999;
+}
+
+footer .content {
+    display: inline;
+}
+
+footer a {
+    margin-left: 30px;
+    color: #777;
+}
+
+footer a:visited {
+    color: #777;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+
+

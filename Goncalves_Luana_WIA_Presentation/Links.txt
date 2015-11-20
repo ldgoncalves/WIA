@@ -1,0 +1,3 @@
+Link to YouTube video: https://youtu.be/6eNEIehPvWE
+
+GitHub under gh-pages: https://github.com/ldgoncalves/WIA.git

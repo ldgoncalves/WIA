@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>National Alliance for Latino Students</title>
+		<link rel="stylesheet" type="text/css" href="css/map.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+		<script src="includes/jquery-1.10.2.min.js"></script>
+		<script src="includes/map.js"></script>
+	</head>
+
+	<body>
+	<div id="container">
+		<header>
+			<a class="logo" title="National Alliance for Latino Students" href="index.html"><span>National Alliance for Latino Students</span></a>
+			<div class="hero">
+				<h1>Education is the key to your Dreams</h1>
+				<a class="btn" title="Apply for Scholarships Today" href="#">Apply for Scholarships Today</a>
+			</div>
+		</header>
+
+		<!-- Main Section -->
+
+		<section>
+			<h2> Locate your Chapter</h2>
+		</section>
+
+		<div class="map_container">
+			<a class="dot" style="top:210px; left:651px;" state="DC" city="dc"></a>
+			<a class="dot" style="top:400px;  left:615px;" state="FL" city="orlando"></a>
+			<a class="dot" style="top:135px;  left:675px;" state="NY" city="newyorkcity"></a>
+			<a class="dot" style="top:275px; left:55px;" state="CA" city="sandiego"></a>
+			<a class="dot" style="top:275px; left:130px;" state="AZ" city="phoenix"></a>
+			<a class="dot" style="top:335px; left:360px;" state="TX" city="dallas"></a>
+
+			<form id="mapForm" name="mapForm" class="form_state" method="post" action="">
+				<select name="state" id="state">
+					<option value="DC">District of Columbia</option>
+					<option value="FL">Orlando</option>
+					<option value="NY">New York City</option>
+					<option value="CA">California</option>
+					<option value="AZ">Arizona</option>
+					<option value="Texas">Dallas</option>
+					<option value="ALL" selected="selected">Show all chapters</option>
+				</select>
+			</form>
+			<div class="detail_container">
+				<div class="city_detail">
+					<h3>Choose a city</h3>
+
+					<p>Instructions go here...</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="city_detail_container">
+			<!-- City -->
+			<div class="city_detail" id="dc">
+				<div class="city_info">
+					<h2>Washington, DC</h2>
+					<p>Address: <br>2000 Pennslyvania Ave NW, DC 20003</p>
+					<p>Phone: 555-555-5555</p>
+
+				</div>
+			</div>
+			<!-- City -->
+			<div class="city_detail" id="orlando">
+
+				<div class="city_info">
+					<h2>Orlando</h2>
+
+					<h3>Florida</h3>
+
+					<p>Address: <br>2000 Universal Blvd, Orlando, FL 20003</p>
+					<p>Phone: 555-555-5555</p>
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city_detail" id="newyorkcity">
+
+				<div class="city_info">
+					<h2>New York City</h2>
+
+					<h3>New York</h3>
+
+					<p>Address: <br>2000 Broadway Ave, New York City, NY 10009</p>
+					<p>Phone: 555-555-5555</p>
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city_detail" id="sandiego">
+
+				<div class="city_info">
+					<h2>San Diego</h2>
+
+					<h3>California</h3>
+
+					<p>Address: <br>2000 Pennslyvania Ave NW, San Diego, CA 20003</p>
+					<p>Phone: 555-555-5555</p>
+				</div>
+			</div>
+
+			<!-- City -->
+			<div class="city_detail" id="phoenix">
+
+				<div class="city_info">
+					<h2>Phoenix</h2>
+
+					<h3>Arizona</h3>
+
+					<p>Address: <br>2000 Pennslyvania Ave NW, Phoenix, AZ 20003</p>
+					<p>Phone: 555-555-5555</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+
+			<!-- City -->
+			<div class="city_detail" id="dallas">
+				<div class="city_info">
+					<h2>Dallas</h2>
+					<h3>Texas</h3>
+					<p>Address:<br>2000 Pennslyvania Ave NW, Dallas, TX 20003</p>
+					<p>Phone: 555-555-5555</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+
+		</div>
+
+		<!-- Navigation -->
+		<nav class="menu">
+			<ul class="parent">
+				<li>
+					<a title="Home" href="index.html">Home</a>
+				</li>
+				<li>
+					<a title="Scholarship" href="#">Scholarships</a>
+				</li>
+				<li>
+					<a title="Resources" href="#">Resources</a>
+					<ul class="child">
+						<li>
+							<a title="Stats" href="stats.html">Stats</a>
+						</li>
+						<li>
+							<a title="Tools" href="#">Advocacy Tools</a>
+							<ul class="sibling">
+								<li>
+									<a title="Social Media" href="#">Social Media Tools</a>
+								</li>
+								<li>
+									<a title="Legislator" href="#">Contact Your Legislator</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a title="About" href="#">About</a>
+				</li>
+			</ul>
+		</nav>
+
+		<footer>
+			&copy; National Alliance for Latino Students
+			<div class="content">
+				<a title="Privacy Policy" href="#">Privacy Policy</a>
+				<a title="Terms of Service" href="#">Terms of Service</a>
+			</div>
+		</footer>
+	</div>
+	</body>
+</html>
